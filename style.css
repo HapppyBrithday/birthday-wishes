@@ -14,10 +14,10 @@
 .translucent-box 
 {
     position:relative; /* Position the element fixed within the viewport */
-    top: 840px; /* Distance from the top of the viewport */
-    left: 45%;
-    width: 461px; /* Adjust the width as needed */
-    height: 450px; /* Adjust the height as needed */
+    top: 745px; /* Distance from the top of the viewport */
+    left: 50%;
+    width: 540px; /* Adjust the width as needed */
+    height: 461px; /* Adjust the height as needed */
     background-color: rgba(0,0,0,.5);
     color: white; /* Text color */
     font-size: 32px;
@@ -44,8 +44,8 @@
     opacity: 0;
     transition: opacity 1s;
     position: absolute;
-    top: 877px;
-    left: -6px;
+    top: 750px;
+    left: -2px;
 }
   
 .pic img.active {
