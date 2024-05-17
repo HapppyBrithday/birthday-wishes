@@ -1,0 +1,82 @@
+.background 
+{
+    /* display: flex;
+     /* justify-content: center;
+     height: 100vh; /* Use full viewport height */
+     /* margin-top: 50%; Remove default margin */
+     background-repeat: no-repeat;
+     background-attachment:local;
+     /* background-image: url('img1.jpg'); */
+     background-position: relative;
+     transition:3s;
+}
+
+.translucent-box 
+{
+    position:relative; /* Position the element fixed within the viewport */
+    top: 840px; /* Distance from the top of the viewport */
+    left: 45%;
+    width: 461px; /* Adjust the width as needed */
+    height: 450px; /* Adjust the height as needed */
+    background-color: rgba(0,0,0,.5);
+    color: white; /* Text color */
+    font-size: 32px;
+    padding: 20px; /* Padding inside the box */
+    border: 3px solid #000; /* Optional: border around the box */
+    vertical-align: 999px;
+    overflow:auto;
+}
+
+.pic{
+    position:relative;
+    /* top:1358px; */
+    /* right:67%; */
+    width: 100%;
+    max-width: 500px;
+    /* height: 335px; */
+    /* border: 2px ridge rgb(49, 47, 47); */
+    /* background-image: url('img2.jpg'); */
+
+}
+  
+.pic img {
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 877px;
+    left: -6px;
+}
+  
+.pic img.active {
+    opacity: 1;
+}
+
+/* .slider-container {
+    position: relative;
+} */
+
+
+/* Add styles for navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute; /* Position the arrows absolutely within the translucent box */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Align arrow center with box center */
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    z-index: 10; /* Ensure arrows are above other content */
+}
+
+.prev {
+    left: 430px; /* Position the "prev" arrow inside the box from the left */
+}
+
+.next {
+    right: 22px; /* Position the "next" arrow inside the box from the right */
+}
